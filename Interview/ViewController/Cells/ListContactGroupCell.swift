@@ -38,6 +38,7 @@ class ListContactGroupCell: UITableViewCell {
     }
 
     @objc private func actionEdit() {
-
+        guard let contactGroupId = contactGroupId else { return }
+        delegate?.editContactGroup(from: self, contactGroupId: contactGroupId)
     }
 }
