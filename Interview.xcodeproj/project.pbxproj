@@ -12,6 +12,7 @@
 		1F3262D225864AAB002846B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3262D025864AAB002846B1 /* Main.storyboard */; };
 		1F3262D425864AAC002846B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3262D325864AAC002846B1 /* Assets.xcassets */; };
 		1F3262D725864AAC002846B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3262D525864AAC002846B1 /* LaunchScreen.storyboard */; };
+		1FA438782586614300B2EFBD /* ViewController in Resources */ = {isa = PBXBuildFile; fileRef = 1FA438772586614300B2EFBD /* ViewController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1F3262D325864AAC002846B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3262D625864AAC002846B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3262D825864AAC002846B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA438772586614300B2EFBD /* ViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewController; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1F3262C925864AAB002846B1 /* Interview */ = {
 			isa = PBXGroup;
 			children = (
+				1FA438772586614300B2EFBD /* ViewController */,
 				1F3262CA25864AAB002846B1 /* AppDelegate.swift */,
 				1F3262CC25864AAB002846B1 /* SceneDelegate.swift */,
 				1F3262D025864AAB002846B1 /* Main.storyboard */,
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3262D725864AAC002846B1 /* LaunchScreen.storyboard in Resources */,
+				1FA438782586614300B2EFBD /* ViewController in Resources */,
 				1F3262D425864AAC002846B1 /* Assets.xcassets in Resources */,
 				1F3262D225864AAB002846B1 /* Main.storyboard in Resources */,
 			);
