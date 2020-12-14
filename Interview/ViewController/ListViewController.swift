@@ -76,6 +76,8 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let retval = UILabel()
         retval.text = viewModels[section].sectionTitle
+        retval.textColor = .gray
+        retval.font = .systemFont(ofSize: 12, weight: .medium)
         return retval
     }
 
@@ -88,7 +90,6 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
 extension ListViewController: ListContactGroupCellDelegate {
 
     func editContactGroup(from cell: ListContactGroupCell, contactGroupId: String) {
-
         // TODO: implement
     }
 }
