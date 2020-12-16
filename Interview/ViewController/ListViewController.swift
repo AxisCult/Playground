@@ -56,9 +56,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
             if let url = model.avatarUrl {
                 DispatchQueue.global(qos: .userInteractive).async {
                     let image = UIImage(data: try! Data(contentsOf: url))
-                    DispatchQueue.main.async {
-                        cell.avatarImageView.image = image
-                    }
+                    cell.avatarImageView.image = image
                 }
             }
             return cell
