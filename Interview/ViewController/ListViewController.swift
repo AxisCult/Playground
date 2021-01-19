@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ListViewControllerProtocol {
+    func displayModels(_ models: [ListViewModel])
+}
+
 class ListViewController: UIViewController {
 
     private let tableView = UITableView()
@@ -26,6 +30,15 @@ class ListViewController: UIViewController {
 
     private func makeConstraints() {
         // Constraints boilerplate
+    }
+}
+
+// MARK: - ListViewControllerProtocol
+extension ListViewController: ListViewControllerProtocol {
+
+    func displayModels(_ models: [ListViewModel]) {
+        viewModels = models
+        tableView.reloadData()
     }
 }
 
@@ -84,7 +97,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-// MARK: - UITableViewDelegate
+// MARK: - ListContactGroupCellDelegate
 extension ListViewController: ListContactGroupCellDelegate {
 
     func editContactGroup(from cell: ListContactGroupCell, contactGroupId: String) {
